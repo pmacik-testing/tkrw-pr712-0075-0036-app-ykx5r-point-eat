@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-oqwg
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0036-tenant/tkrw-pr712-0075-0036-app/devfile-sample-oqwg@sha256:ef36f566776f8eb43bc471c2194faca05b9e31356cb90dc6be6c78e6f3d219e7
+        name: my-nodejs
+        resources: {}
+status: {}
